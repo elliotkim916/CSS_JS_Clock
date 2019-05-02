@@ -8,7 +8,7 @@ function setDate() {
   const now = new Date();
   
   const seconds = now.getSeconds();
-  seconds > 1 ? secondHand.classList.remove('transition') : secondHand.classList.add('transition');
+  seconds > 1 ? secondHand.classList.add('transition') : secondHand.classList.remove('transition');
   const secondsDegrees = ((seconds / 60) * 360) + 90;  
   // we take our seconds, divide that by 60 to get a percentage, and multiply that by 360 to get the value that is the percentage of 360
   // for example, if seconds is 59, then 59/60 = .9833, then multiplying .9833 by 360 gives us the value that is .9833 of 360 degrees
