@@ -21,6 +21,15 @@ body {
   border: 5px solid black;
   border-radius: 50%;  
   position: relative;
+  padding: 2rem;
+  box-shadow: inset 0px 0px 4px 1px yellow;
+  /* 1st value is horizontal offset, 2nd value is vertical offset, 3rd value is optional blur effect, 4th value defines the spread of the shadow */
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
 }
 
 .hand {
